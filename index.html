@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDUCENTER | Education Management</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #111827;
+    }
+
+    header {
+      background: #0b5ed7;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    .hero {
+      min-height: 570px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 70px 7%;
+      background: white;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .hero h1 span {
+      color: #0b5ed7;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 14px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #0b5ed7;
+      color: white;
+    }
+
+    .secondary {
+      border: 2px solid #0b5ed7;
+      color: #0b5ed7;
+    }
+
+    .dashboard-card {
+      width: 390px;
+      background: #111827;
+      color: white;
+      padding: 25px;
+      border-radius: 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    .dashboard-card h2 {
+      margin-bottom: 20px;
+    }
+
+    .stat {
+      background: #1f2937;
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .features {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 45px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .icon {
+      font-size: 35px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .dashboard-card {
+        width: 100%;
+        max-width: 390px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">EDUCENTER</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="hero-text">
+    <h1>Smart Education with <span>EDUCENTER</span></h1>
+
+    <p>
+      A modern platform for educational clubs and learning centers.
+      Manage students, teachers, schedules, attendance, grades,
+      homework and payments in one simple system.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn primary">Get Started</a>
+      <a href="#features" class="btn secondary">Explore</a>
+    </div>
+  </div>
+
+  <div class="dashboard-card">
+    <h2>EDUCENTER Dashboard</h2>
+
+    <div class="stat">
+      👨‍🎓 Students<br>
+      <strong>248 Active Students</strong>
+    </div>
+
+    <div class="stat">
+      📚 Courses<br>
+      <strong>18 Active Courses</strong>
+    </div>
+
+    <div class="stat">
+      📅 Today's Lessons<br>
+      <strong>12 Lessons</strong>
+    </div>
+
+    <div class="stat">
+      💳 Payments<br>
+      <strong>87% Completed</strong>
+    </div>
+  </div>
+
+</section>
+
+<section class="features" id="features">
+
+  <h2 class="section-title">Everything in One Place</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">👨‍🎓</div>
+      <h3>Student Management</h3>
+      <p>
+        Manage student profiles, courses, levels,
+        attendance and academic progress.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📅</div>
+      <h3>Smart Schedule</h3>
+      <p>
+        Create and manage lesson schedules,
+        subjects, teachers and classrooms.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Grades & Attendance</h3>
+      <p>
+        Track grades, attendance, homework
+        and student performance.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👨‍🏫</div>
+      <h3>Teacher Dashboard</h3>
+      <p>
+        Teachers can manage classes, students,
+        homework, grades and attendance.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👨‍👩‍👧</div>
+      <h3>Parent Dashboard</h3>
+      <p>
+        Parents can monitor their children's
+        schedule, grades, attendance and homework.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💳</div>
+      <h3>Payment Management</h3>
+      <p>
+        Track monthly tuition, paid amounts,
+        balances and payment history.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="features" id="about">
+  <h2 class="section-title">About EDUCENTER</h2>
+
+  <div class="card">
+    <p>
+      EDUCENTER is designed to make educational center
+      management easier, faster and more organized.
+      Students, parents, teachers and administrators
+      can access the information they need through
+      dedicated dashboards.
+    </p>
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>EDUCENTER</h3>
+  <p>Smart education management platform</p>
+  <br>
+  <p>© 2026 EDUCENTER. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
